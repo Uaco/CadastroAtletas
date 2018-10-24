@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name" >Escolinhas de Base</string>
+    <string name="perfilItens">Perfil de Usuario</string>
+    <string-array name="itens">
+        <item>ADMINISTRADOR</item>
+        <item>DIRIGENTE</item>
+    </string-array>
 </resources>

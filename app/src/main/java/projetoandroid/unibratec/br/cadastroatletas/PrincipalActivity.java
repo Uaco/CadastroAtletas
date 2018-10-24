@@ -2,6 +2,9 @@ package projetoandroid.unibratec.br.cadastroatletas;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
 import static projetoandroid.unibratec.br.cadastroatletas.R.drawable.iconsronaldo;
 import static projetoandroid.unibratec.br.cadastroatletas.R.drawable.security_keyandlock;
 
@@ -14,6 +17,7 @@ public class PrincipalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_principal);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(security_keyandlock);
+
 
     }
 }

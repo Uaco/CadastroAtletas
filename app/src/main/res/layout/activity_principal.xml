@@ -20,7 +20,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="199dp"
+                android:layout_height="167dp"
                 android:adjustViewBounds="true"
                 android:cropToPadding="false"
                 android:foregroundGravity="center"
@@ -58,16 +58,24 @@
                 android:gravity="center_vertical|center_horizontal|center"
                 android:inputType="textPassword" />
 
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:addStatesFromChildren="false"
+                android:entries="@array/itens"
+                android:prompt="@string/perfilItens"/>
+
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="match_parent"
-                android:layout_height="85dp"
+                android:layout_height="83dp"
                 app:srcCompat="@drawable/security_key" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:gravity="center"
                 android:text="Insira o nome de usuario e senha fornecidos na entrega de sua documentação."
                 app:fontFamily="monospace" />
