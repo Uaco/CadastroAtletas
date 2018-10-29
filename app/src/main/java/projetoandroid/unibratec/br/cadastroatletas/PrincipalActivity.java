@@ -1,13 +1,11 @@
 package projetoandroid.unibratec.br.cadastroatletas;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Spinner;
-
-import static projetoandroid.unibratec.br.cadastroatletas.R.drawable.iconsronaldo;
 import static projetoandroid.unibratec.br.cadastroatletas.R.drawable.security_keyandlock;
-
 
 public class PrincipalActivity extends AppCompatActivity {
 
@@ -20,4 +18,15 @@ public class PrincipalActivity extends AppCompatActivity {
 
 
     }
+    public void chamarPrincipal(View view){
+
+
+        Spinner combo = findViewById(R.id.spinner);
+        if(combo.getSelectedItem().equals("ADMINISTRADOR")) {
+            Intent it = new Intent(this, MenuUsuarioActivity.class);
+            startActivity(it);
+        }
+
+    }
+
 }

@@ -70,7 +70,8 @@
                 android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="83dp"
-                app:srcCompat="@drawable/security_key" />
+                app:srcCompat="@drawable/security_key"
+                android:onClick="chamarPrincipal"/>
 
             <TextView
                 android:id="@+id/textView3"

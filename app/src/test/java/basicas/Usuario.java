@@ -1,15 +1,18 @@
 package basicas;
 
-public class Usuario {
+public class Usuario extends Pessoa{
 
     private String usuario;
-    private String Senha;
+    private String senha;
 
     private enum perfis {
         ADMINISTRADOR,DIRIGENTTE;
     }
-    public Usuario(){
 
+    public Usuario(int cod,String nome, String rg, String email, String usuario, String senha) {
+        super(cod, nome, rg, email);
+        this.usuario = usuario;
+        this.senha = senha;
     }
 
     public String getUsuario() {
@@ -21,11 +24,11 @@ public class Usuario {
     }
 
     public String getSenha() {
-        return Senha;
+        return senha;
     }
 
     public void setSenha(String senha) {
-        Senha = senha;
+        this.senha = senha;
     }
 
 

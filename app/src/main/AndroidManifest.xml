@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NovoUsuarioActivity"
+                    android:label="@string/activity_novo_usuario"/>
+        <activity android:name=".MenuUsuarioActivity"
+                    android:label="@string/activity_menu"></activity>
     </application>
 
 </manifest>

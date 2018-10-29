@@ -12,9 +12,11 @@ public class CreateDb extends SQLiteOpenHelper {
     private static final int version = 2;
 
 
+
     public CreateDb(Context context) {
 
         super(context, dbEscola,null,version);
+
     }
 
 
@@ -22,7 +24,8 @@ public class CreateDb extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String sql = "create table usuario (codUsuario integer primary key autoincrement" +
                 ",usuario varchar(30) not null," +
-                "senha varchar(8)) not null, perfil enum('ADMINISTRADOR','DIRIGENTE')not null)";
+                "senha varchar(8) not null, perfil varchar check(perfil in ('ADMINISTRADOR','DIRIGENTE'))  not null)";
+        db.execSQL(sql);
     }
 
     @Override

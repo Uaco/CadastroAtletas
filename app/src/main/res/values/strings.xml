@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name" >Escolinhas de Base</string>
+    <string name="app_name">Escolinhas de Base</string>
     <string name="perfilItens">Perfil de Usuario</string>
     <string-array name="itens">
         <item>ADMINISTRADOR</item>
         <item>DIRIGENTE</item>
     </string-array>
+    <string name="activity_menu">Gerenciar Usuários</string>
+    <string name = "activity_novo_usuario">Cadastrar Usuário</string>>
 </resources>
