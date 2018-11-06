@@ -3,11 +3,11 @@ package projetoandroid.unibratec.br.cadastroatletas;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MenuUsuarioActivity extends AppCompatActivity {
+public class CadastroAtletasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_cadastro_atletas);
     }
 }

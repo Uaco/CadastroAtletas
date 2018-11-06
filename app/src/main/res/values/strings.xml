@@ -6,5 +6,5 @@
         <item>DIRIGENTE</item>
     </string-array>
     <string name="activity_menu">Gerenciar Usuários</string>
-    <string name = "activity_novo_usuario">Cadastrar Usuário</string>>
+    <string name="activity_novo_usuario">Cadastrar Usuário</string>>
 </resources>

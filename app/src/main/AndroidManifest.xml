@@ -16,10 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NovoUsuarioActivity"
-                    android:label="@string/activity_novo_usuario"/>
-        <activity android:name=".MenuUsuarioActivity"
-                    android:label="@string/activity_menu"></activity>
+        <activity
+            android:name=".NovoUsuarioActivity"
+            android:label="@string/activity_novo_usuario" />
+        <activity
+            android:name=".MenuUsuarioActivity"
+            android:label="@string/activity_menu" />
+        <activity
+            android:name=".CadastroAtletasActivity"
+            android:label="Cadastro do Atleta" />
+        <activity
+            android:name=".MenuCadastroActivity"
+            android:label="Menu" />
+        <activity
+            android:name=".CadastroInstituicaoActivity"
+            android:label="Cadastro de Instituição"></activity>
     </application>
 
 </manifest>

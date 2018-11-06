@@ -1,0 +1,960 @@
+warning: LF will be replaced by CRLF in .idea/gradle.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .idea/misc.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .idea/runConfigurations.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .idea/vcs.xml.
+The file will have its original line endings in your working directory
+[1mdiff --git a/.idea/caches/build_file_checksums.ser b/.idea/caches/build_file_checksums.ser[m
+[1mindex c652083..760e50a 100644[m
+Binary files a/.idea/caches/build_file_checksums.ser and b/.idea/caches/build_file_checksums.ser differ
+[1mdiff --git a/.idea/dictionaries/Marcio.xml b/.idea/dictionaries/Marcio.xml[m
+[1mdeleted file mode 100644[m
+[1mindex ffe8fb0..0000000[m
+[1m--- a/.idea/dictionaries/Marcio.xml[m
+[1m+++ /dev/null[m
+[36m@@ -1,7 +0,0 @@[m
+[31m-<component name="ProjectDictionaryState">[m
+[31m-  <dictionary name="Marcio">[m
+[31m-    <words>[m
+[31m-      <w>keyandlock</w>[m
+[31m-    </words>[m
+[31m-  </dictionary>[m
+[31m-</component>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/misc.xml b/.idea/misc.xml[m
+[1mindex 99202cc..e0d5b93 100644[m
+[1m--- a/.idea/misc.xml[m
+[1m+++ b/.idea/misc.xml[m
+[36m@@ -5,22 +5,26 @@[m
+     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />[m
+     <option name="myNullables">[m
+       <value>[m
+[31m-        <list size="5">[m
+[32m+[m[32m        <list size="7">[m
+           <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />[m
+           <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />[m
+           <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />[m
+           <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />[m
+           <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />[m
+[32m+[m[32m          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />[m
+[32m+[m[32m          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />[m
+         </list>[m
+       </value>[m
+     </option>[m
+     <option name="myNotNulls">[m
+       <value>[m
+[31m-        <list size="4">[m
+[32m+[m[32m        <list size="6">[m
+           <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />[m
+           <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />[m
+           <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />[m
+           <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />[m
+[32m+[m[32m          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />[m
+[32m+[m[32m          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />[m
+         </list>[m
+       </value>[m
+     </option>[m
+[1mdiff --git a/.idea/vcs.xml b/.idea/vcs.xml[m
+[1mindex 94a25f7..35eb1dd 100644[m
+[1m--- a/.idea/vcs.xml[m
+[1m+++ b/.idea/vcs.xml[m
+[36m@@ -1,6 +1,6 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ <project version="4">[m
+   <component name="VcsDirectoryMappings">[m
+[31m-    <mapping directory="$PROJECT_DIR$" vcs="Git" />[m
+[32m+[m[32m    <mapping directory="" vcs="Git" />[m
+   </component>[m
+ </project>[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml[m
+[1mindex c094670..229dc1d 100644[m
+[1m--- a/app/src/main/AndroidManifest.xml[m
+[1m+++ b/app/src/main/AndroidManifest.xml[m
+[36m@@ -16,10 +16,21 @@[m
+                 <category android:name="android.intent.category.LAUNCHER" />[m
+             </intent-filter>[m
+         </activity>[m
+[31m-        <activity android:name=".NovoUsuarioActivity"[m
+[31m-                    android:label="@string/activity_novo_usuario"/>[m
+[31m-        <activity android:name=".MenuUsuarioActivity"[m
+[31m-                    android:label="@string/activity_menu"></activity>[m
+[32m+[m[32m        <activity[m
+[32m+[m[32m            android:name=".NovoUsuarioActivity"[m
+[32m+[m[32m            android:label="@string/activity_novo_usuario" />[m
+[32m+[m[32m        <activity[m
+[32m+[m[32m            android:name=".MenuUsuarioActivity"[m
+[32m+[m[32m            android:label="@string/activity_menu" />[m
+[32m+[m[32m        <activity[m
+[32m+[m[32m            android:name=".CadastroAtletasActivity"[m
+[32m+[m[32m            android:label="Cadastro do Atleta" />[m
+[32m+[m[32m        <activity[m
+[32m+[m[32m            android:name=".MenuCadastroActivity"[m
+[32m+[m[32m            android:label="Menu" />[m
+[32m+[m[32m        <activity[m
+[32m+[m[32m            android:name=".CadastroInstituicaoActivity"[m
+[32m+[m[32m            android:label="Cadastro de Instituição"></activity>[m
+     </application>[m
+ [m
+ </manifest>[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/java/projetoandroid/unibratec/br/cadastroatletas/MenuCadastroActivity.java b/app/src/main/java/projetoandroid/unibratec/br/cadastroatletas/MenuCadastroActivity.java[m
+[1mindex 20d838a..2897f0b 100644[m
+[1m--- a/app/src/main/java/projetoandroid/unibratec/br/cadastroatletas/MenuCadastroActivity.java[m
+[1m+++ b/app/src/main/java/projetoandroid/unibratec/br/cadastroatletas/MenuCadastroActivity.java[m
+[36m@@ -1,7 +1,10 @@[m
+ package projetoandroid.unibratec.br.cadastroatletas;[m
+ [m
+[32m+[m[32mimport android.content.Intent;[m
+ import android.support.v7.app.AppCompatActivity;[m
+ import android.os.Bundle;[m
+[32m+[m[32mimport android.view.View;[m
+[32m+[m[32mimport android.widget.Button;[m
+ [m
+ public class MenuCadastroActivity extends AppCompatActivity {[m
+ [m
+[36m@@ -9,5 +12,14 @@[m [mpublic class MenuCadastroActivity extends AppCompatActivity {[m
+     protected void onCreate(Bundle savedInstanceState) {[m
+         super.onCreate(savedInstanceState);[m
+         setContentView(R.layout.activity_menu_cadastro);[m
+[32m+[m
+[32m+[m[32m        Button btnCadastroAtleta = (Button)findViewById(R.id.btnCadastroAtleta);[m
+[32m+[m[32m        btnCadastroAtleta.setOnClickListener(new View.OnClickListener() {[m
+[32m+[m[32m            @Override[m
+[32m+[m[32m            public void onClick(View view) {[m
+[32m+[m[32m                Intent intent = new Intent(MenuCadastroActivity.this, CadastroAtletasActivity.class);[m
+[32m+[m[32m                startActivity(intent);[m
+[32m+[m[32m            }[m
+[32m+[m[32m        });[m
+     }[m
+ }[m
+[1mdiff --git a/app/src/main/java/projetoandroid/unibratec/br/cadastroatletas/PrincipalActivity.java b/app/src/main/java/projetoandroid/unibratec/br/cadastroatletas/PrincipalActivity.java[m
+[1mindex 08ac083..2e218d6 100644[m
+[1m--- a/app/src/main/java/projetoandroid/unibratec/br/cadastroatletas/PrincipalActivity.java[m
+[1m+++ b/app/src/main/java/projetoandroid/unibratec/br/cadastroatletas/PrincipalActivity.java[m
+[36m@@ -18,12 +18,12 @@[m [mpublic class PrincipalActivity extends AppCompatActivity {[m
+ [m
+ [m
+     }[m
+[31m-    public void chamarPrincipal(View view){[m
+ [m
+[32m+[m[32m    public void chamarPrincipal(View view){[m
+ [m
+         Spinner combo = findViewById(R.id.spinner);[m
+         if(combo.getSelectedItem().equals("ADMINISTRADOR")) {[m
+[31m-            Intent it = new Intent(this, MenuUsuarioActivity.class);[m
+[32m+[m[32m            Intent it = new Intent(this, MenuCadastroActivity.class);[m
+             startActivity(it);[m
+         }[m
+ [m
+[1mdiff --git a/app/src/main/res/drawable/rounded.xml b/app/src/main/res/drawable/rounded.xml[m
+[1mindex a8b409b..0645ccf 100644[m
+[1m--- a/app/src/main/res/drawable/rounded.xml[m
+[1m+++ b/app/src/main/res/drawable/rounded.xml[m
+[36m@@ -1,4 +1,6 @@[m
+ <?xml version="1.0" encoding="utf-8"?>[m
+[31m-<selector xmlns:android="http://schemas.android.com/apk/res/android">[m
+[31m-[m
+[31m-</selector>[m
+\ No newline at end of file[m
+[32m+[m[32m<shape xmlns:android="http://schemas.android.com/apk/res/android">[m
+[32m+[m[32m    <solid android:color="#FFFFFF" />[m
+[32m+[m[32m    <stroke android:width="3dip" android:color="#79FF4D" />[m
+[32m+[m[32m    <corners android:radius="5dp" />[m
+[32m+[m[32m</shape>[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/res/layout/activity_cadastro_atletas.xml b/app/src/main/res/layout/activity_cadastro_atletas.xml[m
+[1mindex 6d99b5f..329ea58 100644[m
+[1m--- a/app/src/main/res/layout/activity_cadastro_atletas.xml[m
+[1m+++ b/app/src/main/res/layout/activity_cadastro_atletas.xml[m
+[36m@@ -1,9 +1,339 @@[m
+ <?xml version="1.0" encoding="utf-8"?>[m
+[31m-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"[m
+[31m-    xmlns:app="http://schemas.android.com/apk/res-auto"[m
+[32m+[m[32m<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"[m
+     xmlns:tools="http://schemas.android.com/tools"[m
+     android:layout_width="match_parent"[m
+     android:layout_height="match_parent"[m
+[31m-    tools:context=".CadastroAtletasActivity">[m
+[32m+[m[32m    tools:context=".CadastroAtleta">[m
+ [m
+[31m-</android.support.constraint.ConstraintLayout>[m
+\ No newline at end of file[m
+[32m+[m[32m    <ScrollView[m
+[32m+[m[32m        android:layout_width="match_parent"[m
+[32m+[m[32m        android:layout_height="match_parent">[m
+[32m+[m
+[32m+[m[32m        <LinearLayout[m
+[32m+[m[32m            android:layout_width="match_parent"[m
+[32m+[m[32m            android:layout_height="wrap_content"[m
+[32m+[m[32m            android:orientation="vertical">[m
+[32m+[m
+[32m+[m[32m            <RelativeLayout[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:background="@drawable/rounded"[m
+[32m+[m[32m                android:layout_gravity="center"[m
+[32m+[m[32m                android:layout_margin="10dp">[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtMatricula"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="Matricula:"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtMatricula"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:inputType="textPersonName"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtMatricula"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtCpf"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:maxLength="30"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="CPF:"[m
+[32m+[m[32m                    android:layout_below="@+id/txtMatricula"[m
+[32m+[m[32m                    android:layout_marginTop="25dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtCPF"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtCpf"[m
+[32m+[m[32m                    android:layout_below="@+id/EtMatricula"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtNome"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="match_parent"[m
+[32m+[m[32m                    android:text="Nome:"[m
+[32m+[m[32m                    android:layout_below="@+id/txtCpf"[m
+[32m+[m[32m                    android:layout_marginTop="18dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtNome"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_below="@+id/EtCPF"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtNome"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtDataNascimento"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="match_parent"[m
+[32m+[m[32m                    android:text="Data de Nascimento:"[m
+[32m+[m[32m                    android:layout_below="@+id/txtNome"[m
+[32m+[m[32m                    android:layout_marginTop="20dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtDtNascimmento"[m
+[32m+[m[32m                    android:layout_width="100dp"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_below="@+id/EtNome"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtDataNascimento"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:inputType="date"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtSexo"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="match_parent"[m
+[32m+[m[32m                    android:text="Sexo:"[m
+[32m+[m[32m                    android:layout_below="@+id/txtDataNascimento"[m
+[32m+[m[32m                    android:layout_marginTop="20dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"[m
+[32m+[m[32m                    android:layout_marginBottom="10dp"/>[m
+[32m+[m[32m                <RadioGroup[m
+[32m+[m[32m                    android:id="@+id/radioGroup"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_below="@+id/EtDtNascimmento"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtSexo"[m
+[32m+[m[32m                    android:layout_marginTop="20dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"[m
+[32m+[m[32m                    android:layout_marginBottom="10dp">[m
+[32m+[m[32m                    <RadioButton[m
+[32m+[m[32m                        android:id="@+id/radioFeminino"[m
+[32m+[m[32m                        android:layout_width="wrap_content"[m
+[32m+[m[32m                        android:layout_height="wrap_content"[m
+[32m+[m[32m                        android:checked="true"[m
+[32m+[m[32m                        android:text="Feminino"/>[m
+[32m+[m[32m                    <RadioButton[m
+[32m+[m[32m                        android:id="@+id/radioMasculino"[m
+[32m+[m[32m                        android:layout_width="wrap_content"[m
+[32m+[m[32m                        android:layout_height="wrap_content"[m
+[32m+[m[32m                        android:text="Masculino"/>[m
+[32m+[m[32m                </RadioGroup>[m
+[32m+[m
+[32m+[m[32m        </RelativeLayout>[m
+[32m+[m
+[32m+[m[32m        <RelativeLayout[m
+[32m+[m[32m            android:layout_width="match_parent"[m
+[32m+[m[32m            android:layout_height="wrap_content"[m
+[32m+[m[32m            android:background="@drawable/rounded"[m
+[32m+[m[32m            android:layout_gravity="center"[m
+[32m+[m[32m            android:layout_margin="10dp">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m            <TextView[m
+[32m+[m[32m                android:id="@+id/txtEndereco"[m
+[32m+[m[32m                android:textSize="20dp"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:text="Endereço:"[m
+[32m+[m[32m                android:layout_marginTop="10dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"[m
+[32m+[m[32m                android:layout_marginRight="10dp" />[m
+[32m+[m
+[32m+[m[32m            <EditText[m
+[32m+[m[32m                android:id="@+id/EtEndereço"[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:layout_toRightOf="@+id/txtEndereco"[m
+[32m+[m[32m                android:padding="5dp"[m
+[32m+[m[32m                android:layout_marginTop="10dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp" />[m
+[32m+[m
+[32m+[m
+[32m+[m[32m            <TextView[m
+[32m+[m[32m                android:id="@+id/txtNumero"[m
+[32m+[m[32m                android:textSize="20dp"[m
+[32m+[m[32m                android:maxLength="30"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:text="Número:"[m
+[32m+[m[32m                android:layout_below="@+id/txtEndereco"[m
+[32m+[m[32m                android:layout_marginTop="25dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"[m
+[32m+[m[32m                android:layout_marginRight="10dp" />[m
+[32m+[m
+[32m+[m[32m            <EditText[m
+[32m+[m[32m                android:id="@+id/EtNumero"[m
+[32m+[m[32m                android:layout_width="50dp"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:layout_below="@+id/EtEndereço"[m
+[32m+[m[32m                android:layout_toRightOf="@+id/txtNumero"[m
+[32m+[m[32m                android:padding="5dp"[m
+[32m+[m[32m                android:layout_marginTop="10dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m            <TextView[m
+[32m+[m[32m                android:id="@+id/txtBairro"[m
+[32m+[m[32m                android:textSize="20dp"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:text="Bairro:"[m
+[32m+[m[32m                android:layout_below="@+id/EtEndereço"[m
+[32m+[m[32m                android:layout_toRightOf="@+id/EtNumero"[m
+[32m+[m[32m                android:layout_marginTop="18dp"[m
+[32m+[m[32m                android:layout_marginLeft="10dp"[m
+[32m+[m[32m                android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m            <EditText[m
+[32m+[m[32m                android:id="@+id/EtBairro"[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:layout_below="@+id/EtEndereço"[m
+[32m+[m[32m                android:layout_toRightOf="@+id/txtBairro"[m
+[32m+[m[32m                android:padding="5dp"[m
+[32m+[m[32m                android:layout_marginTop="10dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"[m
+[32m+[m[32m                />[m
+[32m+[m
+[32m+[m[32m            <TextView[m
+[32m+[m[32m                android:id="@+id/txtCidade"[m
+[32m+[m[32m                android:textSize="20dp"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:text="Cidade:"[m
+[32m+[m[32m                android:layout_below="@+id/txtNumero"[m
+[32m+[m[32m                android:layout_marginTop="25dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"[m
+[32m+[m[32m                android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m            <EditText[m
+[32m+[m[32m                android:id="@+id/EtCidade"[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:layout_toRightOf="@+id/txtCidade"[m
+[32m+[m[32m                android:layout_below="@+id/EtNumero"[m
+[32m+[m[32m                android:padding="5dp"[m
+[32m+[m[32m                android:layout_marginTop="15dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m            <TextView[m
+[32m+[m[32m                android:id="@+id/txtEstado"[m
+[32m+[m[32m                android:textSize="20dp"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:text="UF:"[m
+[32m+[m[32m                android:layout_below="@+id/txtCidade"[m
+[32m+[m[32m                android:layout_marginTop="25dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"[m
+[32m+[m[32m                android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m            <EditText[m
+[32m+[m[32m                android:id="@+id/EtEstado"[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:layout_below="@+id/EtCidade"[m
+[32m+[m[32m                android:layout_toRightOf="@+id/txtEstado"[m
+[32m+[m[32m                android:padding="5dp"[m
+[32m+[m[32m                android:layout_marginTop="20dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m        </RelativeLayout>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        <RelativeLayout[m
+[32m+[m[32m            android:layout_width="match_parent"[m
+[32m+[m[32m            android:layout_height="wrap_content"[m
+[32m+[m[32m            android:background="@drawable/rounded"[m
+[32m+[m[32m            android:layout_gravity="center"[m
+[32m+[m[32m            android:layout_margin="10dp">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m            <TextView[m
+[32m+[m[32m                android:id="@+id/txtCelular"[m
+[32m+[m[32m                android:textSize="20dp"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:text="Celular:"[m
+[32m+[m[32m                android:layout_marginTop="10dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"[m
+[32m+[m[32m                android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m            <EditText[m
+[32m+[m[32m                android:id="@+id/EtTelefone"[m
+[32m+[m[32m                android:layout_width="100dp"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:layout_toRightOf="@id/txtCelular"[m
+[32m+[m[32m                android:inputType="phone"/>[m
+[32m+[m
+[32m+[m[32m            <TextView[m
+[32m+[m[32m                android:id="@+id/txtEmail"[m
+[32m+[m[32m                android:textSize="20dp"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:text="Email:"[m
+[32m+[m[32m                android:layout_below="@id/txtCelular"[m
+[32m+[m[32m                android:layout_marginTop="10dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"[m
+[32m+[m[32m                android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m            <EditText[m
+[32m+[m[32m                android:id="@+id/EtEmail"[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="match_parent"[m
+[32m+[m[32m                android:layout_below="@id/txtCelular"[m
+[32m+[m[32m                android:layout_toRightOf="@id/txtEmail"[m
+[32m+[m[32m                android:layout_marginTop="10dp"[m
+[32m+[m[32m                android:layout_marginLeft="5dp"[m
+[32m+[m[32m                android:layout_marginRight="10dp"/>[m
+[32m+[m[32m        </RelativeLayout>[m
+[32m+[m
+[32m+[m[32m        <RelativeLayout[m
+[32m+[m[32m            android:layout_width="match_parent"[m
+[32m+[m[32m            android:layout_height="wrap_content"[m
+[32m+[m[32m            android:layout_gravity="center"[m
+[32m+[m[32m            android:gravity="center"[m
+[32m+[m[32m            android:layout_margin="10dp">[m
+[32m+[m
+[32m+[m[32m            <Button[m
+[32m+[m[32m                android:id="@+id/BttSave"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="match_parent"[m
+[32m+[m[32m                android:layout_margin="10dp"[m
+[32m+[m[32m                android:text="Cadastrar"/>[m
+[32m+[m
+[32m+[m[32m            <Button[m
+[32m+[m[32m                android:id="@+id/BttClear"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="match_parent"[m
+[32m+[m[32m                android:layout_toRightOf="@id/BttSave"[m
+[32m+[m[32m                android:layout_margin="10dp"[m
+[32m+[m[32m                android:text="Limpar"/>[m
+[32m+[m
+[32m+[m[32m            <Button[m
+[32m+[m[32m                android:id="@+id/BttCancel"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="match_parent"[m
+[32m+[m[32m                android:layout_toRightOf="@id/BttClear"[m
+[32m+[m[32m                android:layout_margin="10dp"[m
+[32m+[m[32m                android:text="Cancelar"/>[m
+[32m+[m
+[32m+[m[32m        </RelativeLayout>[m
+[32m+[m[32m        </LinearLayout>[m
+[32m+[m[32m    </ScrollView>[m
+[32m+[m[32m</LinearLayout>[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/res/layout/activity_cadastro_instituicao.xml b/app/src/main/res/layout/activity_cadastro_instituicao.xml[m
+[1mindex 1f3c76d..76a0495 100644[m
+[1m--- a/app/src/main/res/layout/activity_cadastro_instituicao.xml[m
+[1m+++ b/app/src/main/res/layout/activity_cadastro_instituicao.xml[m
+[36m@@ -1,9 +1,263 @@[m
+ <?xml version="1.0" encoding="utf-8"?>[m
+[31m-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"[m
+[31m-    xmlns:app="http://schemas.android.com/apk/res-auto"[m
+[32m+[m[32m<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"[m
+     xmlns:tools="http://schemas.android.com/tools"[m
+     android:layout_width="match_parent"[m
+[31m-    android:layout_height="match_parent"[m
+[31m-    tools:context=".CadastroInstituicaoActivity">[m
+[32m+[m[32m    android:layout_height="match_parent">[m
+ [m
+[31m-</android.support.constraint.ConstraintLayout>[m
+\ No newline at end of file[m
+[32m+[m[32m    <ScrollView[m
+[32m+[m[32m        android:layout_width="match_parent"[m
+[32m+[m[32m        android:layout_height="match_parent">[m
+[32m+[m
+[32m+[m[32m        <LinearLayout[m
+[32m+[m[32m            android:layout_width="match_parent"[m
+[32m+[m[32m            android:layout_height="wrap_content"[m
+[32m+[m[32m            android:orientation="vertical">[m
+[32m+[m
+[32m+[m[32m            <RelativeLayout[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:background="@drawable/rounded"[m
+[32m+[m[32m                android:layout_gravity="center"[m
+[32m+[m[32m                android:layout_margin="10dp">[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtNomeIstituicao"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="Nome da Instituição:"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EditTextIstituicao"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtNomeIstituicao"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtCNPJ"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:maxLength="30"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="CNPJ:"[m
+[32m+[m[32m                    android:layout_below="@+id/txtNomeIstituicao"[m
+[32m+[m[32m                    android:layout_marginTop="25dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/editTextCNPJ"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtCNPJ"[m
+[32m+[m[32m                    android:layout_below="@+id/EditTextIstituicao"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m            </RelativeLayout>[m
+[32m+[m
+[32m+[m[32m            <RelativeLayout[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:background="@drawable/rounded"[m
+[32m+[m[32m                android:layout_gravity="center"[m
+[32m+[m[32m                android:layout_margin="10dp">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtEndereco"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="Endereço:"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp" />[m
+[32m+[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtEndereço"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtEndereco"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp" />[m
+[32m+[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtNumero"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:maxLength="30"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="Número:"[m
+[32m+[m[32m                    android:layout_below="@+id/txtEndereco"[m
+[32m+[m[32m                    android:layout_marginTop="25dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp" />[m
+[32m+[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtNumero"[m
+[32m+[m[32m                    android:layout_width="50dp"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_below="@+id/EtEndereço"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtNumero"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtBairro"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="Bairro:"[m
+[32m+[m[32m                    android:layout_below="@+id/EtEndereço"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/EtNumero"[m
+[32m+[m[32m                    android:layout_marginTop="18dp"[m
+[32m+[m[32m                    android:layout_marginLeft="10dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtBairro"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_below="@+id/EtEndereço"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtBairro"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    />[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtCidade"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="Cidade:"[m
+[32m+[m[32m                    android:layout_below="@+id/txtNumero"[m
+[32m+[m[32m                    android:layout_marginTop="25dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtCidade"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtCidade"[m
+[32m+[m[32m                    android:layout_below="@+id/EtNumero"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="15dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtEstado"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="UF:"[m
+[32m+[m[32m                    android:layout_below="@+id/txtCidade"[m
+[32m+[m[32m                    android:layout_marginTop="25dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtEstado"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_below="@+id/EtCidade"[m
+[32m+[m[32m                    android:layout_toRightOf="@+id/txtEstado"[m
+[32m+[m[32m                    android:padding="5dp"[m
+[32m+[m[32m                    android:layout_marginTop="20dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"/>[m
+[32m+[m
+[32m+[m[32m            </RelativeLayout>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m            <RelativeLayout[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:background="@drawable/rounded"[m
+[32m+[m[32m                android:layout_gravity="center"[m
+[32m+[m[32m                android:layout_margin="10dp">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtCelular"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="Celular:"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtTelefone"[m
+[32m+[m[32m                    android:layout_width="100dp"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:layout_toRightOf="@id/txtCelular"[m
+[32m+[m[32m                    android:inputType="phone"/>[m
+[32m+[m
+[32m+[m[32m                <TextView[m
+[32m+[m[32m                    android:id="@+id/txtEmail"[m
+[32m+[m[32m                    android:textSize="20dp"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="wrap_content"[m
+[32m+[m[32m                    android:text="Email:"[m
+[32m+[m[32m                    android:layout_below="@id/txtCelular"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m
+[32m+[m[32m                <EditText[m
+[32m+[m[32m                    android:id="@+id/EtEmail"[m
+[32m+[m[32m                    android:layout_width="match_parent"[m
+[32m+[m[32m                    android:layout_height="match_parent"[m
+[32m+[m[32m                    android:layout_below="@id/txtCelular"[m
+[32m+[m[32m                    android:layout_toRightOf="@id/txtEmail"[m
+[32m+[m[32m                    android:layout_marginTop="10dp"[m
+[32m+[m[32m                    android:layout_marginLeft="5dp"[m
+[32m+[m[32m                    android:layout_marginRight="10dp"/>[m
+[32m+[m[32m            </RelativeLayout>[m
+[32m+[m
+[32m+[m[32m            <RelativeLayout[m
+[32m+[m[32m                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:layout_gravity="center"[m
+[32m+[m[32m                android:gravity="center"[m
+[32m+[m[32m                android:layout_margin="10dp">[m
+[32m+[m
+[32m+[m[32m                <Button[m
+[32m+[m[32m                    android:id="@+id/BttSave"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="match_parent"[m
+[32m+[m[32m                    android:layout_margin="10dp"[m
+[32m+[m[32m                    android:text="Cadastrar"/>[m
+[32m+[m
+[32m+[m[32m                <Button[m
+[32m+[m[32m                    android:id="@+id/BttClear"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="match_parent"[m
+[32m+[m[32m                    android:layout_toRightOf="@id/BttSave"[m
+[32m+[m[32m                    android:layout_margin="10dp"[m
+[32m+[m[32m                    android:text="Limpar"/>[m
+[32m+[m
+[32m+[m[32m                <Button[m
+[32m+[m[32m                    android:id="@+id/BttCancel"[m
+[32m+[m[32m                    android:layout_width="wrap_content"[m
+[32m+[m[32m                    android:layout_height="match_parent"[m
+[32m+[m[32m                    android:layout_toRightOf="@id/BttClear"[m
+[32m+[m[32m                    android:layout_margin="10dp"[m
+[32m+[m[32m                    android:text="Cancelar"/>[m
+[32m+[m
+[32m+[m[32m            </RelativeLayout>[m
+[32m+[m[32m        </LinearLayout>[m
+[32m+[m[32m    </ScrollView>[m
+[32m+[m[32m</LinearLayout>[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/res/layout/activity_menu_cadastro.xml b/app/src/main/res/layout/activity_menu_cadastro.xml[m
+[1mindex ae15213..6f7b540 100644[m
+[1m--- a/app/src/main/res/layout/activity_menu_cadastro.xml[m
+[1m+++ b/app/src/main/res/layout/activity_menu_cadastro.xml[m
+[36m@@ -1,9 +1,43 @@[m
+ <?xml version="1.0" encoding="utf-8"?>[m
+[31m-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"[m
+[32m+[m[32m<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"[m
+     xmlns:app="http://schemas.android.com/apk/res-auto"[m
+     xmlns:tools="http://schemas.android.com/tools"[m
+     android:layout_width="match_parent"[m
+     android:layout_height="match_parent"[m
+[31m-    tools:context=".MenuCadastroActivity">[m
+[32m+[m[32m    android:orientation="vertical"[m
+[32m+[m[32m    app:layout_behavior="@string/appbar_scrolling_view_behavior"[m
+[32m+[m[32m    tools:context=".TeladeCadastro">[m
+[32m+[m[32m    <TextView[m
+[32m+[m[32m        android:layout_width="wrap_content"[m
+[32m+[m[32m        android:layout_height="wrap_content"[m
+[32m+[m[32m        android:text="Bem vindos a tela de Cadastro"[m
+[32m+[m[32m        app:layout_constraintBottom_toBottomOf="parent"[m
+[32m+[m[32m        app:layout_constraintLeft_toLeftOf="parent"[m
+[32m+[m[32m        app:layout_constraintRight_toRightOf="parent"[m
+[32m+[m[32m        app:layout_constraintTop_toTopOf="parent" />[m
+ [m
+[31m-</android.support.constraint.ConstraintLayout>[m
+\ No newline at end of file[m
+[32m+[m[32m    <Button[m
+[32m+[m[32m        android:id="@+id/btnCadastroInstituição"[m
+[32m+[m[32m        android:layout_width="match_parent"[m
+[32m+[m[32m        android:layout_height="100dp"[m
+[32m+[m[32m        android:text="Cadastre aqui sua Instituição"/>[m
+[32m+[m
+[32m+[m[32m    <Button[m
+[32m+[m[32m        android:id="@+id/btnCadastroAtleta"[m
+[32m+[m[32m        android:layout_width="match_parent"[m
+[32m+[m[32m        android:layout_height="100dp"[m
+[32m+[m[32m        android:text="Cadastre aqui seu Atleta"/>[m
+[32m+[m
+[32m+[m[32m    <TextView[m
+[32m+[m[32m        android:id="@+id/TvJáCadastrado"[m
+[32m+[m[32m        android:layout_width="wrap_content"[m
+[32m+[m[32m        android:layout_height="wrap_content"[m
+[32m+[m[32m        android:text="Caso você já fez seu cadastro clique no botão abaixo!"/>[m
+[32m+[m
+[32m+[m[32m        <Button[m
+[32m+[m[32m            android:id="@+id/ConsultarCadastro"[m
+[32m+[m[32m            android:layout_width="match_parent"[m
+[32m+[m[32m            android:layout_height="100dp"[m
+[32m+[m[32m            android:text="Já sou cadastrado"/>[m
+[32m+[m
+[32m+[m[32m</LinearLayout>[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/res/layout/activity_principal.xml b/app/src/main/res/layout/activity_principal.xml[m
+[1mindex a366465..46334b8 100644[m
+[1m--- a/app/src/main/res/layout/activity_principal.xml[m
+[1m+++ b/app/src/main/res/layout/activity_principal.xml[m
+[36m@@ -11,7 +11,8 @@[m
+     <LinearLayout[m
+         android:layout_width="match_parent"[m
+         android:layout_height="match_parent"[m
+[31m-        android:orientation="horizontal">[m
+[32m+[m[32m        android:orientation="horizontal"[m
+[32m+[m[32m        android:layout_margin="10dp">[m
+ [m
+         <LinearLayout[m
+             android:layout_width="match_parent"[m
+[36m@@ -31,46 +32,53 @@[m
+             <TextView[m
+                 android:id="@+id/textView"[m
+                 android:layout_width="match_parent"[m
+[31m-                android:layout_height="40dp"[m
+[31m-                android:text="Nome de Usuario:"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:text="Usuario"[m
+[32m+[m[32m                android:gravity="center"[m
+[32m+[m[32m                android:layout_margin="10dp"[m
+                 android:textSize="24sp" />[m
+ [m
+             <EditText[m
+                 android:id="@+id/editText3"[m
+[31m-                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_width="250dp"[m
+                 android:layout_height="wrap_content"[m
+                 android:ems="10"[m
+[31m-                android:gravity="center"[m
+[32m+[m[32m                android:layout_gravity="center"[m
+                 android:inputType="textPersonName" />[m
+ [m
+             <TextView[m
+                 android:id="@+id/textView2"[m
+                 android:layout_width="match_parent"[m
+[31m-                android:layout_height="40dp"[m
+[31m-                android:text="Senha:"[m
+[32m+[m[32m                android:layout_height="wrap_content"[m
+[32m+[m[32m                android:text="Senha"[m
+[32m+[m[32m                android:gravity="center"[m
+[32m+[m[32m                android:layout_margin="10dp"[m
+                 android:textSize="24sp" />[m
+ [m
+             <EditText[m
+                 android:id="@+id/editText5"[m
+[31m-                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_width="250dp"[m
+                 android:layout_height="wrap_content"[m
+                 android:ems="10"[m
+[31m-                android:gravity="center_vertical|center_horizontal|center"[m
+[32m+[m[32m                android:layout_gravity="center"[m
+                 android:inputType="textPassword" />[m
+ [m
+             <Spinner[m
+                 android:id="@+id/spinner"[m
+[31m-                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+                 android:layout_height="40dp"[m
+                 android:addStatesFromChildren="false"[m
+                 android:entries="@array/itens"[m
+[32m+[m[32m                android:layout_gravity="center"[m
+[32m+[m[32m                android:layout_margin="10dp"[m
+                 android:prompt="@string/perfilItens"/>[m
+ [m
+             <ImageButton[m
+                 android:id="@+id/imageButton"[m
+[31m-                android:layout_width="match_parent"[m
+[32m+[m[32m                android:layout_width="200dp"[m
+                 android:layout_height="83dp"[m
+                 app:srcCompat="@drawable/security_key"[m
+[32m+[m[32m                android:layout_gravity="center"[m
+                 android:onClick="chamarPrincipal"/>[m
+ [m
+             <TextView[m
+[1mdiff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml[m
+[1mindex d5aefd8..01e5d12 100644[m
+[1m--- a/app/src/main/res/values/strings.xml[m
+[1m+++ b/app/src/main/res/values/strings.xml[m
+[36m@@ -6,5 +6,5 @@[m
+         <item>DIRIGENTE</item>[m
+     </string-array>[m
+     <string name="activity_menu">Gerenciar Usuários</string>[m
+[31m-    <string name = "activity_novo_usuario">Cadastrar Usuário</string>>[m
+[32m+[m[32m    <string name="activity_novo_usuario">Cadastrar Usuário</string>>[m
+ </resources>[m
+[1mdiff --git a/build.gradle b/build.gradle[m
+[1mindex 077cb2f..4e8009d 100644[m
+[1m--- a/build.gradle[m
+[1m+++ b/build.gradle[m
+[36m@@ -7,7 +7,7 @@[m [mbuildscript {[m
+         jcenter()[m
+     }[m
+     dependencies {[m
+[31m-        classpath 'com.android.tools.build:gradle:3.1.4'[m
+[32m+[m[32m        classpath 'com.android.tools.build:gradle:3.2.0'[m
+         [m
+ [m
+         // NOTE: Do not place your application dependencies here; they belong[m
+[1mdiff --git a/gradle/wrapper/gradle-wrapper.properties b/gradle/wrapper/gradle-wrapper.properties[m
+[1mindex 71762e5..4d12bdb 100644[m
+[1m--- a/gradle/wrapper/gradle-wrapper.properties[m
+[1m+++ b/gradle/wrapper/gradle-wrapper.properties[m
+[36m@@ -1,6 +1,6 @@[m
+[31m-#Wed Oct 03 11:15:41 GFT 2018[m
+[32m+[m[32m#Tue Nov 06 10:47:23 GFT 2018[m
+ distributionBase=GRADLE_USER_HOME[m
+ distributionPath=wrapper/dists[m
+ zipStoreBase=GRADLE_USER_HOME[m
+ zipStorePath=wrapper/dists[m
+[31m-distributionUrl=https\://services.gradle.org/distributions/gradle-4.4-all.zip[m
+[32m+[m[32mdistributionUrl=https\://services.gradle.org/distributions/gradle-4.6-all.zip[m

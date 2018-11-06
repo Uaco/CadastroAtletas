@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TeladeCadastro">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem vindos a tela de Cadastro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCadastroInstituição"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Cadastre aqui sua Instituição"/>
+
+    <Button
+        android:id="@+id/btnCadastroAtleta"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Cadastre aqui seu Atleta"/>
+
+    <TextView
+        android:id="@+id/TvJáCadastrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caso você já fez seu cadastro clique no botão abaixo!"/>
+
+        <Button
+            android:id="@+id/ConsultarCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Já sou cadastrado"/>
+
+</LinearLayout>

@@ -18,12 +18,12 @@ public class PrincipalActivity extends AppCompatActivity {
 
 
     }
-    public void chamarPrincipal(View view){
 
+    public void chamarPrincipal(View view){
 
         Spinner combo = findViewById(R.id.spinner);
         if(combo.getSelectedItem().equals("ADMINISTRADOR")) {
-            Intent it = new Intent(this, MenuUsuarioActivity.class);
+            Intent it = new Intent(this, MenuCadastroActivity.class);
             startActivity(it);
         }
 

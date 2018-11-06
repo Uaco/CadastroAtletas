@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/txtNomeIstituicao"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome da Instituição:"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+                <EditText
+                    android:id="@+id/EditTextIstituicao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtNomeIstituicao"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtCNPJ"
+                    android:textSize="20dp"
+                    android:maxLength="30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNPJ:"
+                    android:layout_below="@+id/txtNomeIstituicao"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+                <EditText
+                    android:id="@+id/editTextCNPJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtCNPJ"
+                    android:layout_below="@+id/EditTextIstituicao"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+
+                <TextView
+                    android:id="@+id/txtEndereco"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Endereço:"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:id="@+id/EtEndereço"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtEndereco"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp" />
+
+
+                <TextView
+                    android:id="@+id/txtNumero"
+                    android:textSize="20dp"
+                    android:maxLength="30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Número:"
+                    android:layout_below="@+id/txtEndereco"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:id="@+id/EtNumero"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EtEndereço"
+                    android:layout_toRightOf="@+id/txtNumero"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtBairro"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bairro:"
+                    android:layout_below="@+id/EtEndereço"
+                    android:layout_toRightOf="@+id/EtNumero"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/EtBairro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EtEndereço"
+                    android:layout_toRightOf="@+id/txtBairro"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtCidade"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cidade:"
+                    android:layout_below="@+id/txtNumero"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/EtCidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtCidade"
+                    android:layout_below="@+id/EtNumero"
+                    android:padding="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtEstado"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UF:"
+                    android:layout_below="@+id/txtCidade"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/EtEstado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EtCidade"
+                    android:layout_toRightOf="@+id/txtEstado"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+
+                <TextView
+                    android:id="@+id/txtCelular"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Celular:"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/EtTelefone"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txtCelular"
+                    android:inputType="phone"/>
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:layout_below="@id/txtCelular"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/EtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txtCelular"
+                    android:layout_toRightOf="@id/txtEmail"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/BttSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Cadastrar"/>
+
+                <Button
+                    android:id="@+id/BttClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/BttSave"
+                    android:layout_margin="10dp"
+                    android:text="Limpar"/>
+
+                <Button
+                    android:id="@+id/BttCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/BttClear"
+                    android:layout_margin="10dp"
+                    android:text="Cancelar"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

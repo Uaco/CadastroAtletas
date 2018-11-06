@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,46 +32,53 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Nome de Usuario:"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:gravity="center"
+                android:layout_margin="10dp"
                 android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/editText3"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Senha:"
+                android:layout_height="wrap_content"
+                android:text="Senha"
+                android:gravity="center"
+                android:layout_margin="10dp"
                 android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/editText5"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_gravity="center"
                 android:inputType="textPassword" />
 
             <Spinner
                 android:id="@+id/spinner"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:addStatesFromChildren="false"
                 android:entries="@array/itens"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
                 android:prompt="@string/perfilItens"/>
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="83dp"
                 app:srcCompat="@drawable/security_key"
+                android:layout_gravity="center"
                 android:onClick="chamarPrincipal"/>
 
             <TextView
